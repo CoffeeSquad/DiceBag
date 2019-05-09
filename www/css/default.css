@@ -1,0 +1,27 @@
+
+#result-view {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#result-view h1 {
+  border-top: 2px solid #a3a3a3;
+  border-bottom: 2px solid #a3a3a3;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#navbar-main {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#dice-view img {
+  max-width: 75%;
+  max-height: 75%;
+  margin: 0px 0px 0px 0px;
+}
+
+#dice-view .ui-block-b {
+  text-align: center;
+}

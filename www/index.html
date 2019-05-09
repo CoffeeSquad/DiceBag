@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="css\default.css">
+  <script data-main="js/scripts/main" src="js/lib/require-2.3.6.js"></script>
+  <title>Dice Bag</title>
+</head>
+
+<body>
+  <div data-role="page">
+
+    <div class="ui-content" id="result-view">
+      <h3>ROLL DETAILS</h3>
+      <h1>ROLL RESULT</h1>
+    </div>
+
+    <div id="navbar-main">
+      <nav data-role="navbar">
+        <ul>
+          <li><a data-role="button" data-shadow="false" data-iconshadow="false" data-corners="false" href="#">Dice</a></li>
+          <li><a data-role="button" data-shadow="false" data-iconshadow="false" data-corners="false" href="#">History</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div data-role="main" class="ui-content" id="dice-view">
+
+      <div id="modifier-div">
+        <h2>Modifier</h2>
+        <input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+      </div>
+
+      <div id="amount-div">
+        <h2>Amount</h2>
+        <input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+      </div>
+
+      <div class="ui-grid-b">
+        <div class="ui-block-b">
+          <img src="img/dice-png/d4-black.png" alt="d4">
+        </div>
+        <div class="ui-block-b">
+          <img src="img/dice-png/d6-black.png" alt="d6">
+        </div>
+        <div class="ui-block-b">
+          <img src="img/dice-png/d8-black.png" alt="d8">
+        </div>
+        <div class="ui-block-b">
+          <img src="img/dice-png/d10-black.png" alt="d10">
+        </div>
+        <div class="ui-block-b">
+          <img src="img/dice-png/d12-black.png" alt="d12">
+        </div>
+        <div class="ui-block-b">
+          <img src="img/dice-png/d20-black.png" alt="d20">
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /page -->
+</body>
+
+</html>
