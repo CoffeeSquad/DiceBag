@@ -38,6 +38,10 @@ html {
   max-width: 300px;
 }
 
+#history-view {
+  display:none;
+}
+
 .inline-child-input {
   width: 30%;
   margin-right: 8px;
