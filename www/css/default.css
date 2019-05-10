@@ -1,4 +1,8 @@
 
+html {
+  overflow: hidden;
+}
+
 #result-view {
   background-color: #f2f2f2;
   text-align: center;
@@ -16,12 +20,39 @@
   padding-right: 0px;
 }
 
+#dice-view {
+  text-align: center;
+}
+
 #dice-view img {
   max-width: 75%;
   max-height: 75%;
   margin: 0px 0px 0px 0px;
 }
 
-#dice-view .ui-block-b {
-  text-align: center;
+#dice-grid {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 10px;
+  max-width: 300px;
+}
+
+.inline-child-input {
+  width: 30%;
+  margin-right: 8px;
+}
+
+.inline-block .inline-child {
+  display: inline-block;
+}
+
+.inline-block label {
+  font: bold 1.2em sans-serif;
+  margin-top: 15px;
+  margin-right: 8px;
+}
+
+.clr {
+  clear: both;
 }

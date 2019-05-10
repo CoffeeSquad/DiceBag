@@ -26,19 +26,31 @@
       </nav>
     </div>
 
-    <div data-role="main" class="ui-content" id="dice-view">
+    <div role="main" class="ui-content" id="dice-view">
 
-      <div id="modifier-div">
-        <h2>Modifier</h2>
-        <input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+      <div class="inline-block">
+        <label for="modifier-input" class="inline-child">Modifier</label>
+        <div class="inline-child inline-child-input">
+          <input type="number" name="number" pattern="[0-9]*" id="modifier-input" value="">
+        </div>
+        <div id="modifier-buttons" class="inline-child">
+          <button id="modifier-button-add" class="ui-btn ui-icon-minus ui-btn-icon-notext ui-btn-inline inline-child">Add Modifier</button>
+          <button id="modifier-button-subtract" class="ui-btn ui-icon-plus ui-btn-icon-notext ui-btn-inline inline-child">Subtract Modifier</button>
+        </div>
       </div>
 
-      <div id="amount-div">
-        <h2>Amount</h2>
-        <input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+      <div class="inline-block">
+        <label for="amount-input" class="inline-child">Amount</label>
+        <div class="inline-child inline-child-input">
+          <input type="number" name="number" pattern="[0-9]*" id="amount-input" value="">
+        </div>
+        <div class="inline-child">
+          <button id="amount-button-add" class="ui-btn ui-icon-minus ui-btn-icon-notext ui-btn-inline inline-child">Add Modifier</button>
+          <button id="amount-button-subtract" class="ui-btn ui-icon-plus ui-btn-icon-notext ui-btn-inline inline-child">Subtract Modifier</button>
+        </div>
       </div>
 
-      <div class="ui-grid-b">
+      <div id="dice-grid" class="ui-grid-b">
         <div class="ui-block-b">
           <img src="img/dice-png/d4-black.png" alt="d4">
         </div>
