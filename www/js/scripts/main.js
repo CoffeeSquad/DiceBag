@@ -11,5 +11,19 @@ requirejs.config({
 requirejs(["jquery", "jquery-mobile"], function() {
   $(document).ready(function() {
     console.log("DOM Ready");
+
+
+        $("#history-button").click(function(){
+          $("#dice-view").hide();
+          $("#history-view").show();
+        });
+
+
+        $("#dice-button").click(function(){
+          $("#history-view").hide();
+          $("#dice-view").show();
+        });
+
+
   });
 });
