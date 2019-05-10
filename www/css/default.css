@@ -24,4 +24,9 @@
 
 #dice-view .ui-block-b {
   text-align: center;
+  display:block;
+}
+
+#history-view {
+  display:none;
 }
