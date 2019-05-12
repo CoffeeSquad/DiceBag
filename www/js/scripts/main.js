@@ -14,14 +14,56 @@ requirejs(["jquery", "jquery-mobile"], function() {
 
 
         $("#history-button").click(function(){
-          $("#dice-view").hide();
           $("#history-view").show();
+          $("#dice-view").hide();
         });
 
 
         $("#dice-button").click(function(){
           $("#history-view").hide();
           $("#dice-view").show();
+        });
+
+
+        $("#d4-button").click(function(){
+        let roll = Math.floor((Math.random() * 4) + 1);
+          $("#history-view-list").append("<li>D4 Roll = " + roll + "</li><br/>");
+           $("#roll-result").html(roll);
+        });
+
+
+        $("#d6-button").click(function(){
+          let roll = Math.floor((Math.random() * 6) + 1);
+          $("#history-view-list").append("<li>D6 Roll = " + roll + "</li><br/>");
+          $("#roll-result").html(roll);
+        });
+
+
+        $("#d8-button").click(function(){
+          let roll = Math.floor((Math.random() * 8) + 1);
+            $("#history-view-list").append("<li>D8 Roll = " + roll + "</li><br/>");
+            $("#roll-result").html(roll);
+        });
+
+
+        $("#d10-button").click(function(){
+          let roll = Math.floor((Math.random() * 10) + 1);
+            $("#history-view-list").append("<li>D10 Roll = " + roll + "</li><br/>");
+            $("#roll-result").html(roll);
+        });
+
+
+        $("#d12-button").click(function(){
+          var roll = Math.floor((Math.random() * 12) + 1);
+            $("#history-view-list").append("<li>D12 Roll = " + roll + "</li><br/>");
+            $("#roll-result").html(roll);
+        });
+
+
+        $("#d20-button").click(function(){
+          var roll = Math.floor((Math.random() * 20) + 1);
+            $("#history-view-list").append("<li>D20 Roll = " + roll + "</li><br/>");
+            $("#roll-result").html(roll);
         });
 
 

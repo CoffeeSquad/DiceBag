@@ -14,7 +14,7 @@
 
     <div class="ui-content" id="result-view">
       <h3>ROLL DETAILS</h3>
-      <h1>ROLL RESULT</h1>
+      <h1 id=roll-result>ROLL RESULT</h1>
     </div>
 
     <div id="navbar-main">
@@ -52,28 +52,30 @@
 
       <div id="dice-grid" class="ui-grid-b">
         <div class="ui-block-b">
-          <img src="img/dice-png/d4-black.png" alt="d4">
+          <img src="img/dice-png/d4-black.png" alt="d4" id="d4-button">
         </div>
         <div class="ui-block-b">
-          <img src="img/dice-png/d6-black.png" alt="d6">
+          <img src="img/dice-png/d6-black.png" alt="d6" id=d6-button>
         </div>
         <div class="ui-block-b">
-          <img src="img/dice-png/d8-black.png" alt="d8">
+          <img src="img/dice-png/d8-black.png" alt="d8" id=d8-button>
         </div>
         <div class="ui-block-b">
-          <img src="img/dice-png/d10-black.png" alt="d10">
+          <img src="img/dice-png/d10-black.png" alt="d10" id=d10-button>
         </div>
         <div class="ui-block-b">
-          <img src="img/dice-png/d12-black.png" alt="d12">
+          <img src="img/dice-png/d12-black.png" alt="d12" id=d12-button>
         </div>
         <div class="ui-block-b">
-          <img src="img/dice-png/d20-black.png" alt="d20">
+          <img src="img/dice-png/d20-black.png" alt="d20" id=d20-button>
         </div>
       </div>
   </div>
 
   <div role="main" class="ui-content" id="history-view">
-    <p> history view </p>
+    <ul data-role="listview" id=history-view-list>
+
+    </ul>
 
   </div>
 
